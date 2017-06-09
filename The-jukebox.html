@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jukebox</title>
+	<link rel="stylesheet" type="text/css" href="The-jukebox.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="The-jukebox.js"></script>
+
+</head>
+<body class="custom-background">
+	<h1>Jukebox Stater Kit</h1>
+
+	<div class="middle">
+		<button onclick="playAud()">Play</button>
+		<button onclick="pauseAud()">Pause</button>
+		<button onclick="previous()">Previous</button>
+		<button onclick="next()">Next</button><br><br>
+		<audio id="myAudio" controls autoplay>
+			<source id="mp3-src" src="audio/letme.mp3" type="audio/mp3">
+			<source id="moorim" src="moorim-school.mp3" type="audio/mp3">
+			<p>
+				The browser doesn't support HTML5 audio
+				<a href="audio/letme.mp3">Link to audio</a>instead.
+			</p>
+		</audio>	
+	</div>
+	<div class="middle">
+
+		<div id="pr" class="hover-next" onmouseover="onHover()">
+			<h1 class="middle h1b">Previous</h1>
+		</div>
+		<div id="nx" class="hover-next" onmouseover="onHover2()">
+			<h1 class="middle h1b">Next</h1>
+		</div>
+
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+.middle{
+	text-align: center;
+	margin: 20px auto;
+	vertical-align: middle;
+}
+h1{
+	text-align: center;
+}
+.h1b{
+	text-align: center;
+	vertical-align: middle;
+	line-height: 250px;
+}
+.hover-next{
+	margin: 20px auto;
+	height: 300px;
+	width: 300px;
+	background: url("https://ak9.picdn.net/shutterstock/videos/11349323/thumb/1.jpg");
+	border: 5px gray solid;
+	border-radius: 10%;
+	display: inline-block;
+}
+#pr:hover{
+	
+	background: rgba(0,0,0,0.6);
+}
+#nx:hover{
+	
+	background: rgba(0,0,0,0.6);
+}
+
+.custom-background{
+	color: #ffffff;
+	background: url("images/dark-01.jpg")50% 0 repeat fixed;
+	min-height: 1000px;
+	background-size: cover;
+	background-position: center;
+}
