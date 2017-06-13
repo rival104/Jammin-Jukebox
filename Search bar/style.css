@@ -1,0 +1,28 @@
+#Search_Bar{
+	padding:8px 15px;
+	background:rgba(50, 50, 50, 0.2);
+	border:0px solid #dbdbdb;
+	font-family: fantasy;
+	width: 300px;
+}
+
+#btnSearch{
+	position:relative;
+	padding:6px 15px;
+	left:-8px;
+	border:2px solid #dbdbdb;
+	background-color:black;
+	color:#fafafa;
+	font-family: fantasy;
+}
+
+#btnSearch:hover  {
+	background-color:#fafafa;
+	color:#207cca;
+}
+input:focus{
+	outline: none;
+}
+.Search_result{
+	list-style-type: none;
+}
