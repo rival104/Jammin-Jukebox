@@ -1,0 +1,48 @@
+body{
+	background: #91a2bf;
+}
+
+h4{
+	font-family: fantasy;
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 2px;
+	color: white;
+}
+
+div{
+	background: url(https://www.melbamoore.com/images/designs/default/background-notes.jpg);
+	border-radius: 20px;
+	border: double;
+	width: 400px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+hr.line { 
+  height: 30px; 
+  border-style: solid; 
+  border-color: white; 
+  border-width: 1px 0 0 0; 
+  border-radius: 20px; 
+  margin-top: -12px;
+}
+hr.line:before { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: white; 
+  border-width: 0 0 1px 0; 
+  border-radius: 20px; 
+}
+
+ul{
+	font-family: fantasy;
+}
+
+ul li {
+    margin: 5px;
+    color: white;
+    font-weight: bold;
+}
