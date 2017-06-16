@@ -1,7 +1,29 @@
+html, body{
+	width: 100%;
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+	
+}
+body{
+	background: url("images/blue-01.jpg") fixed;
+	min-height: 1200px;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+
+}
+
+
 .middle{
 	text-align: center;
 	margin: 20px auto;
 	vertical-align: middle;
+}
+.cover{
+	margin: 0 auto;
+	height: 300px;
+	width: 300px;
+	display: block;
 }
 h1{
 	text-align: center;
@@ -30,9 +52,70 @@ h1{
 }
 
 .custom-background{
-	color: #ffffff;
-	background: url("images/dark-01.jpg")50% 0 repeat fixed;
+	/*color: #ffffff;*/
+	/*background: url("images/dark-01.jpg")50% 0 repeat fixed;*/
 	min-height: 1000px;
 	background-size: cover;
 	background-position: center;
 }
+
+/* === playlist === */
+#playlist{
+	margin: 10px;
+	padding: 0px 20px;
+}
+.pl-head{
+	text-align: center;
+}
+
+.pl-box{
+	background: url(https://www.melbamoore.com/images/designs/default/background-notes.jpg);
+	border-radius: 20px;
+	border: double;
+	width: 400px;
+	box-shadow: 10px 10px 5px #888888;
+	color: gray;
+	margin: 20px 20px;
+
+}
+.pl-box ul li {
+	margin: 5px;
+	font-weight: bold;
+}
+hr.line { 
+	height: 30px; 
+	border-style: solid; 
+	border-color: white; 
+	border-width: 1px 0 0 0; 
+	border-radius: 20px; 
+	margin-top: -12px;
+}
+hr.line:before { 
+	display: block; 
+	content: ""; 
+	height: 30px; 
+	margin-top: -31px; 
+	border-style: solid; 
+	border-color: white; 
+	border-width: 0 0 1px 0; 
+	border-radius: 20px; 
+}
+.pl-box a{
+	color:white;
+	text-decoration: none;
+}
+/*#load{
+	color:blue;
+}*/
+/*#reset{
+	color:blue;
+}*/
+.active{
+  background: rgba(255,255,255,.15);
+}
+.btn-default{
+	background-color: black;
+}
+
+
+

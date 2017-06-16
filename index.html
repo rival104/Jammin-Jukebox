@@ -1,39 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href="images/juke.png" rel="shortcut icon">
 	<title>Jukebox</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="The-jukebox.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="The-jukebox.js"></script>
-
 </head>
-<body class="custom-background">
-	<h1>Jukebox Stater Kit</h1>
 
-	<div class="middle">
-		<button onclick="playAud()">Play</button>
-		<button onclick="pauseAud()">Pause</button>
-		<button onclick="previous()">Previous</button>
-		<button onclick="next()">Next</button><br><br>
-		<audio id="myAudio" controls autoplay>
-			<source id="mp3-src" src="audio/letme.mp3" type="audio/mp3">
-			<source id="moorim" src="moorim-school.mp3" type="audio/mp3">
-			<p>
-				The browser doesn't support HTML5 audio
-				<a href="audio/letme.mp3">Link to audio</a>instead.
-			</p>
-		</audio>	
-	</div>
-	<div class="middle">
+<body>
+	<div class="container">
 
-		<div id="pr" class="hover-next" onmouseover="onHover()">
-			<h1 class="middle h1b">Previous</h1>
-		</div>
-		<div id="nx" class="hover-next" onmouseover="onHover2()">
-			<h1 class="middle h1b">Next</h1>
+		<div ></div>
+		<h1>Jammin Jukebox</h1>
+
+		<div class="middle text-center">
+			<img id="cover" class="img-thumbnail cover" src="https://image.freepik.com/free-vector/shiny-play-button_1035-1617.jpg">
+			<button  id= "play-button" >Play</button>
+			<button  id= "pause"  >Pause</button>
+			<button id= "previous" >Previous</button>
+			<button  id= "next"  >Next</button><br><br>
+			<audio id="myAudio" preload="auto" tabindex="0" controls>
+				<source id="mp3-src" src="http://www.soundjay.com/communication/sounds/tape-recorder-eject-1.mp3" type="audio/mp3">
+					<p>
+						The browser doesn't support HTML5 audio
+						<a href="http://www.codenamejupiterx.com/song/soundtest.mp3">Link to audio</a>instead.
+					</p>
+				</audio>	
+			</div>
+
+		<div class = "row">
+			<div class="col-sm-6">
+
+				<div class="pl-box text-center">
+					<h4 class="pl-head">Search</h4>
+					<input type="text" id= "searchMusic"/>
+					<button id ="submit"> Submit</button>
+
+					<div id="result">
+						<ol id="myOl"></ol>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<div id="playl" class="pl-box">
+					<h4 class="pl-head">Playlist</h4>
+					<ul id="playlist">
+						<li class="active text-center">
+							<button class="btn btn-default"><a src ="https://image.freepik.com/free-vector/shiny-play-button_1035-1617.jpg" id="load" class="inner" href="http://www.soundjay.com/communication/sounds/tape-recorder-eject-1.mp3">Load to player
+							</a></button><button class="btn btn-default" id="reset"> Reset</button>
+						</li>
+					</ul>
+				</div>
+
+				
+			</div>
 		</div>
 
 	</div>
 
 </body>
 </html>
+
